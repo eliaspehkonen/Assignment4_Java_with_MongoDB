@@ -164,7 +164,7 @@ public class UserForm {
 
     private void initializeDatabase() {
         try {
-            mongoClient = MongoClients.create("mongodb+srv://eliasdev:pHMxaNjDiGdFY60v@cluster0.5qihclf.mongodb.net/");
+            mongoClient = MongoClients.create("mongodb+srv://<username>:<password>@cluster0.5qihclf.mongodb.net/");
             database = mongoClient.getDatabase("Assignment4");
             collection = database.getCollection("users");
             JOptionPane.showMessageDialog(frame, "Connected to the database successfully!");
